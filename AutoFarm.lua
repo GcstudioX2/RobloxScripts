@@ -1,15 +1,14 @@
--- ✅ Simple UI by GcstudioX2
+
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/UI-Libraries/main/venyx/main.lua"))()
 local venyx = library.new("GcstudioX2 Menu", 5013109572)
 
--- 🧩 หน้าหลัก
+
 local page = venyx:addPage("Main", 5012544693)
 local section = page:addSection("Auto Features")
 
 local autoFarm = false
 local autoCollect = false
 
--- 🌾 Auto Farm
 section:addToggle("Auto Farm", false, function(value)
     autoFarm = value
     if autoFarm then
@@ -23,7 +22,6 @@ section:addToggle("Auto Farm", false, function(value)
     end
 end)
 
--- 💰 Auto Collect
 section:addToggle("Auto Collect", false, function(value)
     autoCollect = value
     if autoCollect then
