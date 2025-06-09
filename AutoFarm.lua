@@ -35,7 +35,7 @@ section:addToggle("Auto Collect", false, function(value)
     end
 end)
 
--- 📦 Exit
+
 section:addButton("OFF MENU", function()
     venyx:toggle()
 end)
