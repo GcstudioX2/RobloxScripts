@@ -1,11 +1,7 @@
-
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/UI-Libraries/main/venyx/main.lua"))()
 local venyx = library.new("Gay", 5013109572)
-
-
 local page = venyx:addPage("Main", 5012544693)
 local section = page:addSection("Auto Features")
-
 local autoFarm = false
 local autoCollect = false
 
@@ -34,7 +30,6 @@ section:addToggle("Auto Collect", false, function(value)
         print("stop pickup")
     end
 end)
-
 
 section:addButton("OFF MENU", function()
     venyx:toggle()
